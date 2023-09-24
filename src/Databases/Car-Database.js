@@ -42,7 +42,7 @@ export const Cars = [
     },
     {
         id:3,
-        Name:"Mercedes Benz",
+        Name:"Mercedes Benz S Class",
         Model_Year:"2023",
         Price: 320,
         Rating: 4.0,

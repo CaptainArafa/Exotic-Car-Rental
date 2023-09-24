@@ -30,7 +30,7 @@ export const CarCard = ({car,setCar}) => {
         <h5 className='Car-Rating'>{car.Rating}{car.Rating%1===0&&'.0'}<AiFillStar size={30} color='#07271d' /></h5>
        </div>
        <div className='Car-Card-Lower'>
-        <h2 className='Car-Name'>{car.Name} {car.Model}</h2>
+        <h2 className='Car-Name'>{car.Name} {car.Model_Year}</h2>
         <div className='Car-Card-Rating'> 
           <div>{starRating(car)}</div><div className='transmission'><AiFillCar />{car.transmission}</div>
           </div>

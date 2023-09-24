@@ -209,6 +209,7 @@ margin-top: 1.5em;
   opacity: 0.8;
 }
 .Front-Text-button{
+  color: black;
   padding: 0.6em 1.5em;
   background-color: transparent;
   border: 2px solid black;
@@ -228,6 +229,7 @@ margin-top: 1.5em;
     display: none;
   }
   .Front-Text{
+    
     font-size: 1.5rem;
     text-align: center;
   }
@@ -245,6 +247,14 @@ margin-top: 1.5em;
     width: 60%;
   }
 
+}
+@media(max-width:450px){
+  .Front-Text{
+    width: 100%;
+  }
+  .Front-Text-button{
+    width: 90%;
+  }
 }
 
 
@@ -301,6 +311,7 @@ margin-top: 1.5em;
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
+  color: black;
 
   text-align: center;
   padding: 1em 5em 1em 5em;
@@ -317,6 +328,7 @@ margin-top: 1.5em;
 }
 .Rental-Search-Input input{
   border: none;
+  color: black;
   text-align: center;
   padding: 0.3em 0.5em 0.3em 0.5em;
   font-size: 1.2rem; 
@@ -328,10 +340,12 @@ margin-top: 1.5em;
   border: 1px solid black;
   padding: 0.5em;
   border-radius: 25px;
+  color: black;
 }
 .Rental-Search-Input input[type=date]{
   border: 1px solid black;
   padding: 0.5em;
+  color: black;
   border-radius: 25px;
  text-align: center;
 
@@ -415,7 +429,14 @@ opacity: 0.8;
   .Rent-Page-Container{
     padding: 5em 0;
   }
+  .Rental-Search-Error-Msg, .Reservation-Message{
+    width: 90vw;
+    margin: 0 auto;
+  }
   .Rental-Search-Input-Container{
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "msg"
@@ -786,8 +807,29 @@ opacity: 0.8;
   font-size: 2rem;
 
 }
-
-
+@media(max-width:1000px){
+  .Fleet-Container{
+    width: 100%;
+ 
+  }
+  .Car-Card-Container{
+    width: 90%;
+  
+  }
+  .Car-Card-Upper img{
+    height: auto;
+    padding-bottom: 1em;
+  }
+  .Car-Card-Lower{
+    padding-bottom: 1em;
+  }
+ 
+}
+@media(max-width:500px){
+  .Car-Card-Upper,.Car-Card-Lower{
+    height: auto;
+  }
+}
 
 
 
@@ -991,6 +1033,9 @@ align-items: center;
   .Car-Show-Car img{
     width: 100%;
   }
+  .Car-Card-Upper img{
+    height: auto;
+  }
   
 }
 
@@ -1116,9 +1161,11 @@ align-items: center;
 
 
 @media (max-width:1000px){
+  .Page-Splitter p,.Page-Splitter h1{
+    width: 80%;
+  }
   .Page-Splitter h1{
     font-size: 2.3rem;
-    width: 100%;
     
   }
   .Page-Splitter p{
@@ -1137,6 +1184,9 @@ align-items: center;
   .Footer-Newsletter{
     align-items: center;
     width: 100%;
+  }
+  .Footer-Container h2{
+    font-size: 2.5rem;
   }
 }
 
@@ -1213,26 +1263,26 @@ align-items: center;
   .Testimonials-Top,.Testimonials-Bottom{
     position:relative;
     width: 80%;
-    
+    padding: 2em 0.5em;
     margin: 0;
     
   }
   .Inner-Testimonials-Container{
     display: flex;
     flex-direction: column;
-    gap:3em
+    gap:3em;
   }
   .Client-Photo{
     position: absolute;
     margin: 0 auto;
     right: 0;
-    top: 85%;
+    top: 87%;
     left: 0;
     color: black;
   }
   .Outter-Testimonials-Container h2{
     margin-bottom: 0.5em;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -1323,9 +1373,13 @@ align-items: center;
     text-align: center;
   }
   .FAQ-Question div{
-    font-size: 1.3rem;
-    padding: 0.6em 0.5em; 
+    font-size: 1rem;
+    padding: 1em 1em 1em 1em; 
     
+  }
+  .FAQ-Question div h3{
+    font-size: 1.3rem;
+    margin-right: 1em;
   }
   .FAQ-Body{
     padding: 3em 1em;
@@ -1529,6 +1583,9 @@ box-shadow: 1px 1px 15px -5px rgba(0,0,0,0.75);
   }
 }
 @media(max-width:1000px){
+  .Contact-Title{
+    padding: 0 2em;
+  }
   .Contact-Info-List,.Contact-Info-List-Li{
     text-align: center;
   }
@@ -1559,6 +1616,9 @@ box-shadow: 1px 1px 15px -5px rgba(0,0,0,0.75);
 @media(max-width:500px){
   .Contact-Form{
     width: 80vw;
+  }
+  .Contact-Title{
+    padding: 0 1em;
   }
 }
 
@@ -1638,7 +1698,10 @@ box-shadow: 1px 1px 15px -5px rgba(0,0,0,0.75);
 
 @media (max-width:1000px){
   
-  
+  .Staff-Container{
+    margin-top: 5em;
+    padding: 0 1em 0 1em;
+  }
 }
 
 
@@ -1756,6 +1819,7 @@ box-shadow: 1px 1px 15px -5px rgba(0,0,0,0.75);
 
 @media (max-width:1100px){
   .SignIn-Container{
+    margin-top: 5em;
     width: 70%;
   }
   .SignIn-Button-auth{
@@ -1832,6 +1896,7 @@ box-shadow: 1px 1px 15px -5px rgba(0,0,0,0.75);
   color: rgb(85, 85, 85);
 }
 .Cancel-Reservation{
+  color: black;
   width: 100%;
   font-size: 1.1rem;
   font-weight: bold;
@@ -1890,6 +1955,20 @@ box-shadow: 1px 1px 15px -5px rgba(0,0,0,0.75);
     font-size: 0.6rem;
   }
   .Reservations-NoCars{
+    font-size: 1rem;
+  }
+}
+@media(max-width:470px){
+  .Reservations-Container{
+    padding: 0 0.2em;
+  }
+  .ReservationCard-Left-Info-Inner,.Cancel-Reservation{
+    font-size: 0.7rem;
+  }
+  .ReservationCard-Right h5{
+    font-size: 0.5rem;
+  }
+  .ReservationCard-Left-Info h3{
     font-size: 1rem;
   }
 }
